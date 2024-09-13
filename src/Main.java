@@ -2,8 +2,11 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora();
+      IdadePessoa pessoa = new IdadePessoa();
 
-        System.out.println(calculadora.dobraNumero(5.6));
+      pessoa.setNome("Roan");
+      pessoa.setIdade(18);
+
+      pessoa.verificarIdade();
     }
 }
