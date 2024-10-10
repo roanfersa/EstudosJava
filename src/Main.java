@@ -2,11 +2,15 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-      IdadePessoa pessoa = new IdadePessoa();
+     CalculadoraSalaRetangular calculo = new CalculadoraSalaRetangular();
 
-      pessoa.setNome("Roan");
-      pessoa.setIdade(18);
+     double altura = 159;
+     double largura = 50;
 
-      pessoa.verificarIdade();
+
+        calculo.calcularArea(altura, largura);
+        calculo.calcularPerimetro(altura, largura);
+        System.out.println("Essa é a área da sala: " + calculo.calcularArea(altura, largura));
+        System.out.println("Esse é o perímetro da sala: " + calculo.calcularPerimetro(altura, largura));
     }
 }
